@@ -1,0 +1,40 @@
+06/30/2020 01:56:46 AM Compra para o CPF 12312312322 cadastrada.
+30/06/2020 01:58:55 AM - root - INFO - Compra para o CPF 12312312322 cadastrada.
+30/06/2020 02:01:09 AM - root - ERROR - Revendedor.
+30/06/2020 06:30:40 PM - root - ERROR - Error in field global name 'revCPF' is not defined.
+30/06/2020 06:31:19 PM - root - ERROR - Error in field UNIQUE constraint failed: auth_user.username.
+30/06/2020 06:33:22 PM - root - INFO - Usuario para o CPF 34567890812 criado.
+30/06/2020 06:38:29 PM - root - ERROR - Error in field UNIQUE constraint failed: auth_user.username.
+30/06/2020 06:40:08 PM - root - INFO - Usuario para o CPF 30130130122 criado.
+02/07/2020 01:31:57 PM - root - INFO - Compra para o CPF 32132132123 cadastrada.
+02/07/2020 01:31:57 PM - root - INFO - Usuario para o CPF 32112332112 criado.
+02/07/2020 01:32:34 PM - root - INFO - Compra para o CPF 32132132123 cadastrada.
+02/07/2020 01:32:34 PM - root - INFO - Usuario para o CPF 32112332112 criado.
+04/07/2020 12:08:58 AM - django.request - WARNING - Not Found: /revendedor/
+04/07/2020 01:27:01 PM - root - INFO - Usuario para o CPF 30130130133 criado.
+04/07/2020 01:42:45 PM - django.request - WARNING - Not Found: /
+04/07/2020 01:42:46 PM - django.request - WARNING - Not Found: /favicon.ico
+04/07/2020 02:01:14 PM - django.request - WARNING - Not Found: /compra/1
+04/07/2020 02:04:45 PM - django.request - WARNING - Not Found: /compras/17
+04/07/2020 02:05:26 PM - django.request - WARNING - Not Found: /compras-revendedor/2
+04/07/2020 02:06:06 PM - root - ERROR - Error in field cpf.
+04/07/2020 02:08:18 PM - root - ERROR - Error in field cpf.
+04/07/2020 02:08:36 PM - django.request - WARNING - Not Found: /compras-revendedor/12312312322
+04/07/2020 02:09:00 PM - django.request - ERROR - Internal Server Error: /compras-revendedor
+Traceback (most recent call last):
+  File "/Users/fernandobueno/Library/Python/2.7/lib/python/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/Users/fernandobueno/Library/Python/2.7/lib/python/site-packages/django/utils/deprecation.py", line 138, in __call__
+    response = self.process_request(request)
+  File "/Users/fernandobueno/Library/Python/2.7/lib/python/site-packages/django/middleware/common.py", line 64, in process_request
+    path = self.get_full_path_with_slash(request)
+  File "/Users/fernandobueno/Library/Python/2.7/lib/python/site-packages/django/middleware/common.py", line 104, in get_full_path_with_slash
+    'url': request.get_host() + new_path,
+RuntimeError: You called this URL via POST, but the URL doesn't end in a slash and you have APPEND_SLASH set. Django can't redirect to the slash URL while maintaining POST data. Change your form to point to 127.0.0.1:9000/compras-revendedor/ (note the trailing slash), or set APPEND_SLASH=False in your Django settings.
+04/07/2020 02:09:49 PM - django.request - WARNING - Not Found: /compras-revendedor/12312312322/
+04/07/2020 02:12:17 PM - django.request - WARNING - Not Found: /compras/17/
+04/07/2020 02:13:53 PM - root - ERROR - Error cpf.
+04/07/2020 02:14:41 PM - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): mdaqk8ek5j.execute-api.us-east-1.amazonaws.com:443
+04/07/2020 02:14:43 PM - urllib3.connectionpool - DEBUG - https://mdaqk8ek5j.execute-api.us-east-1.amazonaws.com:443 "GET /v1/cashback?cpf=12312312322 HTTP/1.1" 200 41
+04/07/2020 02:50:12 PM - root - INFO - Compra para o CPF 32132132123 cadastrada.
+04/07/2020 02:50:12 PM - root - INFO - Usuario para o CPF 32112332112 criado.
